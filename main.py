@@ -10,9 +10,11 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 updateable = pygame.sprite.Group()
 drawable = pygame.sprite.Group()
 asteroids = pygame.sprite.Group()
+shots = pygame.sprite.Group()
 Player.containers = (updateable, drawable)
 Asteroid.containers = (asteroids, updateable, drawable)
 AsteroidField.containers = (updateable)
+Shot.containers = (updateable, drawable)
 
 
 
